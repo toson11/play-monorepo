@@ -1,0 +1,22 @@
+{
+  // 给 编辑器用的 schema，用于代码提示和校验
+  "$schema": "https://turborepo.dev/schema.json",
+  // 定义调度任务，任务名对应 package.json 里的脚本名
+  "tasks": {
+    "build": {
+      "outputs": ["dist/**"]
+    },
+    // "check-types": {
+    //   // 在执行本任务前，先执行依赖包的同名任务
+    //   "dependsOn": ["^check-types"]
+    // },
+    "dev": {
+      "persistent": true,
+      "cache": false
+    },
+    "preview": {
+      "persistent": true,
+      "cache": false
+    }
+  },
+}

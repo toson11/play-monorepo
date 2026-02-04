@@ -1,0 +1,11 @@
+{
+  "name": "ui-components",
+  "version": "0.0.1",
+  "main": "index.ts",
+  "exports": {
+    ".": "./index.ts"
+  },
+  "peerDependencies": {
+    "vue": "^3.0.0"
+  }
+}

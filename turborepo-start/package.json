@@ -1,0 +1,21 @@
+{
+  "name": "turborepo-start",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "packageManager": "pnpm@9.12.3",
+  "scripts": {
+    "dev": "turbo run dev",
+    "dev:app1": "pnpm --filter app1 dev",
+    "dev:app2": "pnpm --filter app2 dev",
+    "build": "turbo run build",
+    "preview:app1": "pnpm --filter app1 preview",
+    "preview:app2": "pnpm --filter app2 preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "turbo": "^2.8.3"
+  }
+}

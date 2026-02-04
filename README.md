@@ -10,5 +10,8 @@ Turborepo 是“帮助你高效管理和构建 monorepo 的工具”
 - **并行处理**：自动优化任务调度，最大化并行处理，充分利用CPU资源。
 - **逐步引入**：几分钟内即可将现有项目迁移到 Turborepo，无需大规模重构。
 
-## Monorepo + Turborepo 搭建
+## Monorepo 搭建
 > 详细实现步骤请见：[monorepo-start/README.md](monorepo-start/README.md)
+
+## 引入 Turborepo
+> 详细实现步骤请见：[turborepo-start/README.md](turborepo-start/README.md)
