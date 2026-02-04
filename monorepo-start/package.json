@@ -1,0 +1,13 @@
+{
+  "name": "monorepo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:main": "pnpm --filter main start",
+    "start:ui": "pnpm --filter ui-components start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
