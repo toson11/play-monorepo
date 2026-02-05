@@ -10,12 +10,21 @@
     "dev:app2": "pnpm --filter app2 dev",
     "build": "turbo run build",
     "preview:app1": "pnpm --filter app1 preview",
-    "preview:app2": "pnpm --filter app2 preview"
+    "preview:app2": "pnpm --filter app2 preview",
+    "lint": "eslint . --ext .js,.ts,.vue"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "turbo": "^2.8.3"
+    "@typescript-eslint/eslint-plugin": "^8.54.0",
+    "@typescript-eslint/parser": "^8.54.0",
+    "eslint": "^9.39.2",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.5",
+    "eslint-plugin-vue": "^10.7.0",
+    "prettier": "^3.8.1",
+    "turbo": "^2.8.3",
+    "vue-eslint-parser": "^10.2.0"
   }
 }
