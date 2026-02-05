@@ -165,12 +165,14 @@ module.exports = [
 ```
 
 - `.prettierrc`
-
-```json
-{
-  "singleQuote": true,
-  "printWidth": 100
-}
+```javascript
+// 引入 prettier 配置可以获得智能提示
+/** @type {import('prettier').Options} */
+module.exports = {
+  singleQuote: true, // 使用单引号
+  printWidth: 100, // 每行最大长度
+  trailingComma: 'none', // 不使用尾逗号
+};
 ```
 
 ### 3. 配置 VSCode 自动格式化
