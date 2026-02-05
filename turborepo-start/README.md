@@ -118,19 +118,23 @@ const prettier = require('eslint-plugin-prettier');
 
 module.exports = [
   {
+    // 全局忽略文件夹和文件
+    ignores: ['**/node_modules/', '**/dist/', '**/build/', '*.log', '**/.turbo/']
+  },
+  {
     files: ['**/*.vue'],
     languageOptions: {
       parser: vueParser,
       parserOptions: {
         parser: tsparser,
         ecmaVersion: 2021,
-        sourceType: 'module',
-      },
+        sourceType: 'module'
+      }
     },
     plugins: {
       vue,
       '@typescript-eslint': tseslint,
-      prettier,
+      prettier
     },
     rules: {
       ...vue.configs.recommended.rules,
@@ -139,24 +143,24 @@ module.exports = [
       'prettier/prettier': 'warn',
       // 自定义规则
       '@typescript-eslint/no-unused-vars': 'error',
-      '@typescript-eslint/no-explicit-any': 'warn',
-    },
+      '@typescript-eslint/no-explicit-any': 'warn'
+    }
   },
   {
     files: ['**/*.{js,ts}'],
     languageOptions: {
       parser: tsparser,
       ecmaVersion: 2021,
-      sourceType: 'module',
+      sourceType: 'module'
     },
     plugins: {
-      '@typescript-eslint': tseslint,
+      '@typescript-eslint': tseslint
     },
     rules: {
       ...tseslint.configs.recommended.rules,
-      'prettier/prettier': 'warn',
-    },
-  },
+      'prettier/prettier': 'warn'
+    }
+  }
 ];
 ```
 

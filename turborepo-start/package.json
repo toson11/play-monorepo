@@ -11,7 +11,7 @@
     "build": "turbo run build",
     "preview:app1": "pnpm --filter app1 preview",
     "preview:app2": "pnpm --filter app2 preview",
-    "lint": "eslint . --ext .js,.ts,.vue"
+    "lint:fix": "eslint . --ext .js,.ts,.vue --fix"
   },
   "keywords": [],
   "author": "",
